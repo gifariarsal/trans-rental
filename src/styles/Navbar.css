@@ -1,0 +1,44 @@
+.nav-menu {
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    top: 70px;
+    right: 0;
+    z-index: 10;
+    display: none;
+}
+
+.nav-menu.open {
+    display: flex;
+    animation: slideIn 0.5s forwards;
+}
+
+.nav-menu.closed {
+    animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
