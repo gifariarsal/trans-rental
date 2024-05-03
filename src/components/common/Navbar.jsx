@@ -12,6 +12,11 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // Fungsi untuk mengubah item menjadi format link yang sesuai
+  const formatLinkIdentifier = (item) => {
+    return item.toLowerCase().replace(/\s+/g, '-');
+  };
+
   return (
     <header className="w-full h-[80px] bg-transparent relative flex justify-between items-center px-4 md:px-8">
       <Logo onClick={() => setIsMenuOpen(false)} />
@@ -20,7 +25,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <Link
               key={item}
-              to={item}
+              to={formatLinkIdentifier(item)}
               spy={true}
               smooth={true}
               className="text-white font-medium cursor-pointer hover:text-primary transition-all duration-300"
@@ -35,7 +40,7 @@ const Navbar = () => {
         {navItems.map((item) => (
           <div key={item} className="cursor-pointer">
             <Link
-              to={item}
+              to={formatLinkIdentifier(item)}
               spy={true}
               smooth={true}
               onClick={toggleMenu}
