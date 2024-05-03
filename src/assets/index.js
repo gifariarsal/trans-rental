@@ -5,5 +5,15 @@ import alphard from './cars/alphard.png';
 import fortuner from './cars/fortuner.png';
 import hiAce from './cars/hi-ace.png';
 import innovaZenix from './cars/innova-zenix.png';
+import whatWeOffer from './what-we-offer.png';
 
-export { logo, seater31, seater51, alphard, fortuner, hiAce, innovaZenix };
+export {
+  logo,
+  seater31,
+  seater51,
+  alphard,
+  fortuner,
+  hiAce,
+  innovaZenix,
+  whatWeOffer,
+};
