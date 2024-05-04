@@ -4,6 +4,25 @@ body {
   word-spacing: 3px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   word-spacing: 9px;
+}
+
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(2, 168, 68, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(2, 168, 68, 0);
+  }
 }

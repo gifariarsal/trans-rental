@@ -6,6 +6,7 @@ import fortuner from './cars/fortuner.png';
 import hiAce from './cars/hi-ace.png';
 import innovaZenix from './cars/innova-zenix.png';
 import whatWeOffer from './what-we-offer.png';
+import hero from './hero.png';
 
 export {
   logo,
@@ -16,4 +17,5 @@ export {
   hiAce,
   innovaZenix,
   whatWeOffer,
+  hero,
 };
