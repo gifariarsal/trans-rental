@@ -29,10 +29,8 @@ const HowItWorks = () => {
   ];
   return (
     <section id="how-it-works" className={`${styles.sectionContainer}`}>
-      <h2 className="text-center mx-auto mb-4 text-4xl lg:text-5xl text-primary font-bold">
-        HOW IT WORKS
-      </h2>
-      <div className="w-full flex flex-col md:flex-row justify-center items-center pt-12 md:gap-4 lg:gap-8">
+      <h2 className={`${styles.sectionTitle}`}>HOW IT WORKS</h2>
+      <div className="w-full flex flex-col md:flex-row justify-center items-center md:gap-4 lg:gap-8">
         {items.map(({ icon, text }, index) => (
           <HowItWorksItem
             key={index}

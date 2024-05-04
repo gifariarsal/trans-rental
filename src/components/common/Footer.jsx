@@ -35,12 +35,12 @@ const Footer = () => {
           <div className="flex gap-4 items-start mb-4">
             <IoLogoWhatsapp size={24} />
             <a
-              href="https://wa.me/+628117009600"
+              href="https://wa.me/+6282168683898"
               className="text-white font-medium lg:text-lg"
               target="_blank"
               rel="noreferrer"
             >
-              +62 811 7009 600
+              +62 821 6868 3898
             </a>
           </div>
           <div className="w-full flex gap-4 items-start mb-4">
