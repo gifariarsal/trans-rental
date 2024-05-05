@@ -23,7 +23,7 @@ const CarsCarousel = ({ positions, positionIndexes, selectedIndex, imageVariants
           }}
           className="flex flex-col items-center justify-center"
         >
-          <img src={image} alt={name} className="mb-4" />
+          <img src={image} alt={name} className="mb-16" />
         </motion.div>
       ))}
       <div
@@ -37,7 +37,7 @@ const CarsCarousel = ({ positions, positionIndexes, selectedIndex, imageVariants
           href={generateWhatsAppLink(carsData[selectedIndex].name)}
           target="_blank"
           rel="noreferrer"
-          className="pulse text-white bg-primary font-semibold px-4 py-2 rounded-[6px] hover:scale-105 transition-all duration-300 cursor-pointer"
+          className="pulse btn-bg text-white font-semibold px-12 py-3 rounded-[6px] hover:scale-105 transition-all duration-300 cursor-pointer"
         >
           Book Now
         </a>
