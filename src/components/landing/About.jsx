@@ -6,7 +6,7 @@ import SectionTitle from '../common/SectionTitle';
 const About = () => {
   return (
     <section id="about" className={`${styles.sectionContainer}`}>
-      <SectionTitle title="YOUR TRUSTED PARTNER" subtitle="ABOUT" />
+      <SectionTitle title="YOUR TRUSTED PARTNER" subtitle="ABOUT US" />
       <div className="w-full flex flex-col md:flex-row justify-center items-center mb-4 mt-8 lg:mt-0 gap-8">
         <div className="w-full md:w-1/2">
           <p className="text-white leading-loose mb-8" data-aos="fade-right">

@@ -1,5 +1,12 @@
 import React from 'react';
-import { About, Cars, Hero, Procedure, Service } from '../components';
+import {
+  About,
+  Cars,
+  Hero,
+  Procedure,
+  Service,
+  Testimonials,
+} from '../components';
 
 const LandingPage = () => {
   return (
@@ -9,6 +16,7 @@ const LandingPage = () => {
       <Procedure />
       <Cars />
       <About />
+      <Testimonials />
     </>
   );
 };

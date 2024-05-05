@@ -17,10 +17,6 @@ h6 {
   animation: pulse-animation 2s infinite;
 }
 
-.btn-bg {
-  background: linear-gradient(to bottom right, #02A844, #006729);
-}
-
 @keyframes pulse-animation {
   0% {
     box-shadow: 0 0 0 0px rgba(2, 168, 68, 0.2);
@@ -29,4 +25,14 @@ h6 {
   100% {
     box-shadow: 0 0 0 20px rgba(2, 168, 68, 0);
   }
+}
+
+.btn-bg {
+  background: linear-gradient(to bottom right, #02A844, #006729);
+}
+
+.custom-shadow {
+  box-shadow:
+    -3px -3px 12px 0 rgba(236, 236, 236, 0.09),
+    3px 3px 12px 0 rgba(0, 0, 0, 0.59);
 }
