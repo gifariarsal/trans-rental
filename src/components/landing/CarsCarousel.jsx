@@ -37,7 +37,7 @@ const CarsCarousel = ({ positions, positionIndexes, selectedIndex, imageVariants
           href={generateWhatsAppLink(carsData[selectedIndex].name)}
           target="_blank"
           rel="noreferrer"
-          className="pulse text-white bg-primary font-semibold px-4 py-2 rounded-[20px] hover:scale-105 transition-all duration-300 cursor-pointer"
+          className="pulse text-white bg-primary font-semibold px-4 py-2 rounded-[6px] hover:scale-105 transition-all duration-300 cursor-pointer"
         >
           Book Now
         </a>
