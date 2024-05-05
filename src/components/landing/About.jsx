@@ -1,10 +1,11 @@
 import React from 'react';
 import { styles } from '../../styles';
+import SectionTitle from '../common/SectionTitle';
 
 const About = () => {
   return (
     <section id="about" className={`${styles.sectionContainer}`}>
-      <h2 className={`${styles.sectionTitle}`}>YOUR TRUSTED PARTNER</h2>
+      <SectionTitle title="YOUR TRUSTED PARTNER" subtitle="ABOUT" />
     </section>
   );
 };

@@ -2,11 +2,12 @@ import React from 'react';
 import { styles } from '../../styles';
 import { whatWeOffer } from '../../assets';
 import '../../styles/ServiceTextEffect.css';
+import SectionTitle from '../common/SectionTitle';
 
 const Service = () => {
   return (
     <section id="service" className={`${styles.sectionContainer}`}>
-      <h2 className={`${styles.sectionTitle}`}>WHAT WE OFFER</h2>
+      <SectionTitle title="WHAT WE OFFER" subtitle="SERVICES" />
       <div className="logo-container">
         <img src={whatWeOffer} alt="Car Rental" id="logo-image" />
         <p id="page-logo">

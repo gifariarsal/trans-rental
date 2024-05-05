@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { styles } from '../../styles';
 import CarsNavigation from './CarsNavigation';
 import CarsCarousel from './CarsCarousel';
+import SectionTitle from '../common/SectionTitle';
 
 const Cars = () => {
   const [positionIndexes, setPositionIndexes] = useState([0, 1, 2, 3, 4, 5]);
@@ -41,8 +42,7 @@ const Cars = () => {
 
   return (
     <section id="cars" className={`${styles.sectionContainer}`}>
-      <h2 className={`${styles.sectionTitle} !mb-2`}>DRIVE CAR YOU LOVE</h2>
-
+      <SectionTitle title="DRIVE CAR YOU LOVE" subtitle="CARS" />
       <div className="bg-black flex items-center flex-col justify-center gap-10">
         <CarsNavigation handleBack={handleBack} handleNext={handleNext} />
         <CarsCarousel

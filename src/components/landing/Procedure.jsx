@@ -7,6 +7,7 @@ import {
   IoCashOutline,
 } from 'react-icons/io5';
 import ProcedureItem from './ProcedureItem';
+import SectionTitle from '../common/SectionTitle';
 
 const Procedure = () => {
   const items = [
@@ -29,7 +30,7 @@ const Procedure = () => {
   ];
   return (
     <section id="procedure" className={`${styles.sectionContainer}`}>
-      <h2 className={`${styles.sectionTitle}`}>HOW IT WORKS</h2>
+      <SectionTitle title="HOW IT WORKS" subtitle="PROCEDURE" />
       <div className="w-full flex flex-col md:flex-row justify-center items-center md:gap-4 lg:gap-8">
         {items.map(({ icon, text }, index) => (
           <ProcedureItem
