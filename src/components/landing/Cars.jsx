@@ -10,7 +10,10 @@ const Cars = () => {
 
   const handleNext = () => {
     setPositionIndexes((prevIndexes) => {
-      const newIndexes = prevIndexes.map((index) => (index + 1) % 6);
+      const newIndexes = prevIndexes.map((index) => {
+        if (index === 0) return 5;
+        return index - 1;
+      });
       setSelectedIndex(newIndexes.indexOf(0));
       return newIndexes;
     });
@@ -18,7 +21,7 @@ const Cars = () => {
 
   const handleBack = () => {
     setPositionIndexes((prevIndexes) => {
-      const newIndexes = prevIndexes.map((index) => (index + 5) % 6);
+      const newIndexes = prevIndexes.map((index) => (index + 1) % 6);
       setSelectedIndex(newIndexes.indexOf(0));
       return newIndexes;
     });
@@ -30,21 +33,26 @@ const Cars = () => {
     return `https://wa.me/+6282168683898?text=${encodedMessage}`;
   };
 
-  const positions = ['center', 'left1', 'left', 'back', 'right', 'right1'];
+  const positions = ['center', 'right1', 'right', 'back', 'left', 'left1'];
   const imageVariants = {
     center: { x: '0%', scale: 1, zIndex: 5 },
     left1: { x: '-50%', scale: 0.7, zIndex: 3 },
     left: { x: '-90%', scale: 0.5, zIndex: 2 },
+    back: { x: '50%', scale: 0.1, zIndex: -1 },
     right: { x: '90%', scale: 0.5, zIndex: 1 },
     right1: { x: '50%', scale: 0.7, zIndex: 3 },
-    back: { x: '50%', scale: 0.1, zIndex: -1 },
   };
 
   return (
     <section id="cars" className={`${styles.sectionContainer}`}>
       <SectionTitle title="DRIVE CAR YOU LOVE" subtitle="CARS" />
       <div className="bg-black flex items-center flex-col justify-center gap-10">
-        <CarsNavigation handleBack={handleBack} handleNext={handleNext} />
+        <CarsNavigation
+          handleBack={handleBack}
+          handleNext={handleNext}
+          selectedIndex={selectedIndex}
+          totalItems={positionIndexes.length}
+        />
         <CarsCarousel
           {...{
             positions,
