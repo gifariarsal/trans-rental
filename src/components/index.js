@@ -1,8 +1,9 @@
 import Navbar from './common/Navbar';
 import Hero from './landing/Hero';
 import Service from './landing/Service';
-import HowItWorks from './landing/HowItWorks';
+import Procedure from './landing/Procedure';
 import Cars from './landing/Cars';
+import About from './landing/About';
 import Footer from './common/Footer';
 
-export { Navbar, Hero, Service, HowItWorks, Cars, Footer };
+export { Navbar, Hero, Service, Procedure, Cars, About, Footer };

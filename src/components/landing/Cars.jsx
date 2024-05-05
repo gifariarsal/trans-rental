@@ -40,7 +40,7 @@ const Cars = () => {
   };
 
   return (
-    <section id="how-it-works" className={`${styles.sectionContainer}`}>
+    <section id="cars" className={`${styles.sectionContainer}`}>
       <h2 className={`${styles.sectionTitle} !mb-2`}>DRIVE CAR YOU LOVE</h2>
 
       <div className="bg-black flex items-center flex-col justify-center gap-10">

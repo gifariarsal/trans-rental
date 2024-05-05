@@ -6,9 +6,9 @@ import {
   IoListCircleOutline,
   IoCashOutline,
 } from 'react-icons/io5';
-import HowItWorksItem from './HowItWorksItem';
+import ProcedureItem from './ProcedureItem';
 
-const HowItWorks = () => {
+const Procedure = () => {
   const items = [
     {
       icon: <IoPhonePortraitOutline size={50} />,
@@ -28,11 +28,11 @@ const HowItWorks = () => {
     },
   ];
   return (
-    <section id="how-it-works" className={`${styles.sectionContainer}`}>
+    <section id="procedure" className={`${styles.sectionContainer}`}>
       <h2 className={`${styles.sectionTitle}`}>HOW IT WORKS</h2>
       <div className="w-full flex flex-col md:flex-row justify-center items-center md:gap-4 lg:gap-8">
         {items.map(({ icon, text }, index) => (
-          <HowItWorksItem
+          <ProcedureItem
             key={index}
             icon={icon}
             text={text}
@@ -46,4 +46,4 @@ const HowItWorks = () => {
   );
 };
 
-export default HowItWorks;
+export default Procedure;

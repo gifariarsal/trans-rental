@@ -12,8 +12,8 @@ const Hero = () => {
       <div className="w-full h-full flex flex-col justify-center items-end gap-12">
         <div className="w-full h-[40%] flex justify-between items-center">
           <div className="w-[50%]">
-            <h1 className={`text-4xl lg:text-5xl text-white font-bold`}>
-              MAKE <span className="text-primary">YOUR TRIP</span> EASIER{' '}
+            <h1 className={`text-4xl lg:text-6xl text-white font-bold`}>
+              MAKE <span className="text-primary">YOUR TRIP</span> EASIER
               <span className="text-primary">.</span>
             </h1>
           </div>

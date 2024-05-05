@@ -1,13 +1,14 @@
 import React from 'react';
-import { Cars, Hero, HowItWorks, Service } from '../components';
+import { About, Cars, Hero, Procedure, Service } from '../components';
 
 const LandingPage = () => {
   return (
     <>
       <Hero />
       <Service />
-      <HowItWorks />
+      <Procedure />
       <Cars />
+      <About />
     </>
   );
 };

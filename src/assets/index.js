@@ -7,6 +7,7 @@ import hiAce from './cars/hi-ace.png';
 import innovaZenix from './cars/innova-zenix.png';
 import whatWeOffer from './what-we-offer.png';
 import hero from './hero.png';
+import about from './about.png';
 
 export {
   logo,
@@ -18,4 +19,5 @@ export {
   innovaZenix,
   whatWeOffer,
   hero,
+  about,
 };

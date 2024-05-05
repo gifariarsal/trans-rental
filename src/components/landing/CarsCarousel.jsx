@@ -27,10 +27,10 @@ const CarsCarousel = ({ positions, positionIndexes, selectedIndex, imageVariants
         </motion.div>
       ))}
       <div
-        className="flex flex-col items-center justify-center gap-2 mt-10"
+        className="flex flex-col items-center justify-center gap-2 mt-4"
         style={{ visibility: 'visible' }}
       >
-        <p className="text-white text-3xl font-semibold mb-4">
+        <p className="text-white text-3xl font-semibold">
           {carsData[selectedIndex].name}
         </p>
         <a

@@ -7,7 +7,7 @@ import {
   seater51,
 } from '../assets';
 
-export const navItems = ['Service', 'How It Works', 'Cars', 'About'];
+export const navItems = ['Service', 'Procedure', 'Cars', 'About'];
 
 export const carsData = [
   { image: alphard, name: 'Alphard' },
