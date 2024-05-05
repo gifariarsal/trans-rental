@@ -3,4 +3,6 @@ export const styles = {
   pages: 'max-w-[1440px] mx-auto px-4 md:px-14 py-8',
   sectionTitle:
     'text-center mx-auto mb-4 md:mb-10 text-4xl lg:text-5xl text-primary font-bold',
+  chevronButton:
+    'mb-[280px] bg-black hover:bg-blackShade border-[1.5px] border-primary rounded-full p-2 transition-all duration-300',
 };
