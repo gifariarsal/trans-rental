@@ -5,6 +5,9 @@ import {
   innovaZenix,
   seater31,
   seater51,
+  rama,
+  rendy,
+  yunita,
 } from '../assets';
 
 export const navItems = [
@@ -67,4 +70,28 @@ export const faqData = [
     answer:
       'Yes, we offer services like professional chauffeurs, airport transfers, 24/7 support, and customized itinerary planning.',
   },
+];
+
+export const companyMembers = [
+  {
+    image: yunita,
+    name: 'Yunita',
+    role: 'Chief Executive Officer',
+  },
+  {
+    image: rama,
+    name: 'Rama Dian Putra',
+    role: 'Sales & Marketing Executive',
+  },
+  {
+    image: rendy,
+    name: 'Rendy Muhenda',
+    role: 'Chief Operating Officer',
+  },
+];
+
+export const missionList = [
+  'Intriducing Riau Islands tourist destination to the public',
+  'Recruiting young people who care about tourism in Riau Islands',
+  'Providing transportation solutions by providing a wide selection of services & vehicles',
 ];

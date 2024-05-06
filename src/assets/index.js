@@ -8,6 +8,9 @@ import innovaZenix from './cars/innova-zenix.png';
 import whatWeOffer from './what-we-offer.png';
 import hero from './hero.png';
 import about from './about.png';
+import rama from './company-members/rama.png';
+import rendy from './company-members/rendy.png';
+import yunita from './company-members/yunita.png';
 
 export {
   logo,
@@ -20,4 +23,7 @@ export {
   whatWeOffer,
   hero,
   about,
+  rama,
+  rendy,
+  yunita,
 };
