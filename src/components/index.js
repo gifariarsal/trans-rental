@@ -5,6 +5,17 @@ import Procedure from './landing/Procedure';
 import Cars from './landing/Cars';
 import About from './landing/About';
 import Testimonials from './landing/Testimonials';
+import FrequentlyAQ from './landing/FrequentlyAQ';
 import Footer from './common/Footer';
 
-export { Navbar, Hero, Service, Procedure, Cars, About, Testimonials, Footer };
+export {
+  Navbar,
+  Hero,
+  Service,
+  Procedure,
+  Cars,
+  About,
+  Testimonials,
+  FrequentlyAQ,
+  Footer,
+};

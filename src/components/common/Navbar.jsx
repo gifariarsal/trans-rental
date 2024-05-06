@@ -14,7 +14,7 @@ const menuVariants = {
   },
   closed: {
     opacity: 0,
-    x: '100%',
+    x: '-100%',
     transition: { type: 'tween', stiffness: 80 },
   },
 };
@@ -31,7 +31,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full h-[80px] bg-transparent relative flex justify-between items-center px-4 md:px-8 overflow-hidden">
+    <header className="w-full h-[80px] bg-transparent relative flex justify-between items-center px-4 md:px-8">
       <Logo onClick={() => setIsMenuOpen(false)} />
       <nav className="bg-inherit">
         <div className="hidden md:flex justify-between items-center md:space-x-8">

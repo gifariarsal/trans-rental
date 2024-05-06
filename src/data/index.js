@@ -41,3 +41,30 @@ export const testimonials = [
     name: 'Henry Tanuwijaya',
   },
 ];
+
+export const faqData = [
+  {
+    id: 1,
+    question: 'What types of vehicles do you offer for rental?',
+    answer:
+      'We offer luxury vehicles such as Alphard, Hiace, Innova Zenix, Fortuner, and buses with 31 and 51 seats.',
+  },
+  {
+    id: 2,
+    question: 'Can I rent a car for a multi-day tour across the Riau Islands?',
+    answer:
+      'Yes, we offer both single-day and multi-day rentals along with tailored tour packages.',
+  },
+  {
+    id: 3,
+    question: 'What are the requirements to rent a vehicle from your company?',
+    answer:
+      "Renters need a valid driver's license, proof of insurance, and a credit card. International visitors require a passport and international driving permit.",
+  },
+  {
+    id: 4,
+    question: 'Do you offer any additional services with your vehicle rentals?',
+    answer:
+      'Yes, we offer services like professional chauffeurs, airport transfers, 24/7 support, and customized itinerary planning.',
+  },
+];

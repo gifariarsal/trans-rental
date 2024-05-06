@@ -2,6 +2,7 @@ import React from 'react';
 import {
   About,
   Cars,
+  FrequentlyAQ,
   Hero,
   Procedure,
   Service,
@@ -17,6 +18,7 @@ const LandingPage = () => {
       <Cars />
       <About />
       <Testimonials />
+      <FrequentlyAQ />
     </>
   );
 };
