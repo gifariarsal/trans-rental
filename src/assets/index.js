@@ -7,6 +7,7 @@ import hiAce from './cars/hi-ace.png';
 import innovaZenix from './cars/innova-zenix.png';
 import whatWeOffer from './what-we-offer.png';
 import hero from './hero.png';
+import heroSmall from './hero-small.png';
 import about from './about.png';
 import rama from './company-members/rama.png';
 import rendy from './company-members/rendy.png';
@@ -22,6 +23,7 @@ export {
   innovaZenix,
   whatWeOffer,
   hero,
+  heroSmall,
   about,
   rama,
   rendy,

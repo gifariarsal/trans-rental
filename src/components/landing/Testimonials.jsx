@@ -9,14 +9,14 @@ const Testimonials = () => {
     <section id="testimonials" className={`${styles.sectionContainer}`}>
       <SectionTitle title="WHAT OUR CUSTOMERS SAY" subtitle="TESTIMONIALS" />
       <div className="flex items-center w-full max-w-screen-xl mx-auto p-4 text-center">
-        <div className="w-full grid grid-cols-3 gap-8 mb-8">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
           {testimonials.map(({ quote, name }) => (
             <div
               key={name}
-              className="custom-shadow p-8 grid gap-4 bg-black rounded-2xl cursor-pointer"
+              className="custom-shadow p-4 lg:p-8 grid gap-4 bg-black rounded-2xl cursor-pointer"
             >
               <span className="text-primary mx-auto">
-                <RiDoubleQuotesL size={40} />
+                <RiDoubleQuotesL size={35} />
               </span>
               <p className="text-white my-2">{quote}</p>
               <hr className="w-[50%] mx-auto border-white/30" />

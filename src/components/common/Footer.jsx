@@ -11,8 +11,8 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer>
-      <div className="w-full flex flex-col md:flex-row bg-transparent p-8 lg:p-12 lg:px-16 gap-8 lg:gap-16">
-        <div className="w-full md:w-[50%] lg:w-[30%]">
+      <div className="w-full flex flex-col lg:flex-row bg-transparent p-8 lg:p-12 lg:px-16 gap-8 lg:gap-16">
+        <div className="w-full lg:w-[30%]">
           <p className="text-white font-bold text-3xl lg:text-4xl mb-4">
             Get in Touch
           </p>
@@ -22,7 +22,7 @@ const Footer = () => {
             find the ideal vehicle for any occasion.
           </p>
         </div>
-        <div className="w-full md:w-[50%] lg:w-[40%] text-white flex flex-col gap-4">
+        <div className="w-full lg:w-[40%] text-white flex flex-col gap-4">
           <div className="flex gap-4 items-center mb-4">
             <IoMailOutline size={24} />
             <a
@@ -44,12 +44,12 @@ const Footer = () => {
             </a>
           </div>
           <div className="w-full flex gap-4 items-start mb-4">
-            <div className="w-[7%]">
+            <div className="lg:w-[7%]">
               <IoLocationOutline size={24} />
             </div>
             <a
               href="https://maps.app.goo.gl/cP3qdkUFJwwvJXxk7"
-              className="w-[93%] text-white font-medium lg:text-lg"
+              className="lg:w-[93%] text-white font-medium lg:text-lg"
               target="_blank"
               rel="noreferrer"
             >
@@ -58,7 +58,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="w-full md:w-[50%] lg:w-[30%] flex flex-col items-center lg:items-start">
+        <div className="w-full lg:w-[30%] flex flex-col items-center lg:items-start">
           <p className="text-white font-bold lg:text-xl lg:ml-3 mb-4">
             Follow Us
           </p>

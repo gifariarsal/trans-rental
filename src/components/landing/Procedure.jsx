@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { styles } from '../../styles';
 import {
   IoPhonePortraitOutline,
@@ -10,28 +10,42 @@ import ProcedureItem from './ProcedureItem';
 import SectionTitle from '../common/SectionTitle';
 
 const Procedure = () => {
+  const [iconSize, setIconSize] = useState(50);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    const handleChange = (event) => {
+      setIconSize(event.matches ? 30 : 50);
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    handleChange(mediaQuery);
+
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
+
   const items = [
     {
-      icon: <IoPhonePortraitOutline size={50} />,
+      icon: <IoPhonePortraitOutline size={iconSize} />,
       text: 'Contact our admin',
     },
     {
-      icon: <IoCalendarOutline size={50} />,
+      icon: <IoCalendarOutline size={iconSize} />,
       text: 'Set a schedule for rent',
     },
     {
-      icon: <IoListCircleOutline size={50} />,
+      icon: <IoListCircleOutline size={iconSize} />,
       text: 'Choose the package',
     },
     {
-      icon: <IoCashOutline size={50} />,
+      icon: <IoCashOutline size={iconSize} />,
       text: 'Pay the down payment',
     },
   ];
   return (
     <section id="procedure" className={`${styles.sectionContainer}`}>
       <SectionTitle title="HOW IT WORKS" subtitle="PROCEDURE" />
-      <div className="w-full flex flex-col md:flex-row justify-center items-center md:gap-4 lg:gap-8">
+      <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-4 md:gap-8">
         {items.map(({ icon, text }, index) => (
           <ProcedureItem
             key={index}

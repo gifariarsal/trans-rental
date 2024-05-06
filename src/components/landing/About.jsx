@@ -22,9 +22,9 @@ const About = () => {
         onClose={() => setOpenModal(false)}
       >
         <Modal.Header className="custom-shadow bg-black">
-          <h3 className="text-primary font-semibold text-xl lg:text-2xl">
+          <p className="text-primary font-semibold text-xl lg:text-2xl">
             About Us
-          </h3>
+          </p>
         </Modal.Header>
         <Modal.Body className="custom-shadow bg-black">
           <section className="space-y-6">
@@ -32,6 +32,14 @@ const About = () => {
             <Vision />
             <Mission missionList={missionList} />
           </section>
+          <footer className="flex justify-end items-center mt-10">
+            <button
+              onClick={() => setOpenModal(false)}
+              className="text-primary"
+            >
+              Close
+            </button>
+          </footer>
         </Modal.Body>
       </Modal>
     </section>

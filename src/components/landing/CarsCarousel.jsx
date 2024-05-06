@@ -1,8 +1,34 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { carsData } from '../../data';
 import { motion } from 'framer-motion';
 
-const CarsCarousel = ({ positions, positionIndexes, selectedIndex, imageVariants, generateWhatsAppLink }) => {
+const CarsCarousel = ({
+  positions,
+  positionIndexes,
+  selectedIndex,
+  imageVariants,
+  generateWhatsAppLink,
+}) => {
+  const [responsiveWidth, setResponsiveWidth] = useState('55%');
+
+  useEffect(() => {
+    const updateWidth = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth < 768) {
+        setResponsiveWidth('80%');
+      } else {
+        setResponsiveWidth('55%');
+      }
+    };
+
+    updateWidth();
+    window.addEventListener('resize', updateWidth);
+
+    return () => {
+      window.removeEventListener('resize', updateWidth);
+    };
+  }, []);
+
   return (
     <>
       {carsData.map(({ image, name }, index) => (
@@ -14,7 +40,9 @@ const CarsCarousel = ({ positions, positionIndexes, selectedIndex, imageVariants
           transition={{ duration: 0.5 }}
           style={{
             width:
-              positions[positionIndexes[index]] === 'center' ? '55%' : '40%',
+              positions[positionIndexes[index]] === 'center'
+                ? responsiveWidth
+                : '40%',
             position: 'absolute',
             filter:
               positions[positionIndexes[index]] === 'center'
@@ -30,7 +58,7 @@ const CarsCarousel = ({ positions, positionIndexes, selectedIndex, imageVariants
         className="flex flex-col items-center justify-center gap-2 mt-4"
         style={{ visibility: 'visible' }}
       >
-        <p className="text-white text-3xl font-semibold">
+        <p className="text-white text-2xl lg:text-3xl font-semibold mb-4">
           {carsData[selectedIndex].name}
         </p>
         <a
@@ -44,6 +72,6 @@ const CarsCarousel = ({ positions, positionIndexes, selectedIndex, imageVariants
       </div>
     </>
   );
-}
+};
 
-export default CarsCarousel
+export default CarsCarousel;

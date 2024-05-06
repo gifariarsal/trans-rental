@@ -13,7 +13,7 @@ const AboutLanding = ({ setOpenModal }) => {
         </p>
         <button
           onClick={() => setOpenModal(true)}
-          className="bg-black text-primary font-semibold px-12 py-3 rounded-[6px] border-[1.5px] border-primary hover:bg-blackShade transition-all duration-300"
+          className="w-full md:w-auto bg-black text-primary font-semibold px-12 py-3 rounded-[6px] border-[1.5px] border-primary hover:bg-blackShade transition-all duration-300"
         >
           Learn More
         </button>

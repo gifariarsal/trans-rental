@@ -5,5 +5,5 @@ export const styles = {
   sectionTitle: 'text-4xl lg:text-5xl text-primary font-bold',
   sectionSubtitle: 'text-lg lg:text-xl text-white/60 font-bold mb-2',
   chevronButton:
-    'mb-[280px] bg-black hover:bg-blackShade border-[1.5px] border-primary rounded-full p-2 transition-all duration-300',
+    'bg-black hover:bg-blackShade border-[1.5px] border-primary rounded-full p-2 transition-all duration-300',
 };

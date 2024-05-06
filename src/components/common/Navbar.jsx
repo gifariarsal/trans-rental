@@ -59,7 +59,7 @@ const Navbar = () => {
         {navItems.map((item) => (
           <div key={item} className="cursor-pointer">
             <Link
-              offset={60}
+              offset={40}
               to={formatLinkIdentifier(item)}
               spy={true}
               smooth={true}

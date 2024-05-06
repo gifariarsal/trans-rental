@@ -56,7 +56,7 @@ export const faqData = [
     id: 2,
     question: 'Can I rent a car for a multi-day tour across the Riau Islands?',
     answer:
-      'Yes, we offer both single-day and multi-day rentals along with tailored tour packages.',
+      'Yes, we offer single-day, multi-day, montly, and even yearly rentals along with tailored tour packages.',
   },
   {
     id: 3,
@@ -68,7 +68,7 @@ export const faqData = [
     id: 4,
     question: 'Do you offer any additional services with your vehicle rentals?',
     answer:
-      'Yes, we offer services like professional chauffeurs, airport transfers, 24/7 support, and customized itinerary planning.',
+      'We provide transportation services ready to pick up or drop off from airports, seaports, hotels, and resorts.',
   },
 ];
 
