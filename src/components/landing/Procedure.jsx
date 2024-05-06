@@ -45,7 +45,11 @@ const Procedure = () => {
   return (
     <section id="procedure" className={`${styles.sectionContainer}`}>
       <SectionTitle title="HOW IT WORKS" subtitle="PROCEDURE" />
-      <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-4 md:gap-8">
+      <div
+        className="w-full flex flex-col lg:flex-row justify-center items-center gap-4 md:gap-8"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         {items.map(({ icon, text }, index) => (
           <ProcedureItem
             key={index}

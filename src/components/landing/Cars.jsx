@@ -46,7 +46,7 @@ const Cars = () => {
   return (
     <section id="cars" className={`${styles.sectionContainer}`}>
       <SectionTitle title="DRIVE CARS YOU LOVE" subtitle="CARS" />
-      <div className="bg-black flex items-center flex-col justify-center gap-10">
+      <div className="bg-black flex items-center flex-col justify-center gap-10" data-aos="fade-up" data-aos-delay="300">
         <CarsNavigation
           handleBack={handleBack}
           handleNext={handleNext}

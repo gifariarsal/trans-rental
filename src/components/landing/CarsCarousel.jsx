@@ -15,7 +15,7 @@ const CarsCarousel = ({
     const updateWidth = () => {
       const screenWidth = window.innerWidth;
       if (screenWidth < 768) {
-        setResponsiveWidth('80%');
+        setResponsiveWidth('90%');
       } else {
         setResponsiveWidth('55%');
       }

@@ -4,8 +4,8 @@ import { about } from '../../assets';
 const AboutLanding = ({ setOpenModal }) => {
   return (
     <div className="w-full flex flex-col md:flex-row justify-center items-center mb-4 mt-8 lg:mt-0 gap-8">
-      <div className="w-full md:w-1/2">
-        <p className="text-white leading-loose mb-8" data-aos="fade-right">
+      <div className="w-full md:w-1/2" data-aos="fade-right">
+        <p className="text-white leading-loose mb-8">
           Trans Rental specializes in luxury and electric vehicle rentals,
           offering expertly curated travel and tour packages since 2009. Enjoy
           safe, comfortable, and unforgettable experiences across Indonesia and

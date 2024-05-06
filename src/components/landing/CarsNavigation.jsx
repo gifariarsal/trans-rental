@@ -14,13 +14,13 @@ const CarsNavigation = ({
         {selectedIndex + 1} / {totalItems}
       </span>
       <button
-        className={`${styles.chevronButton} mb-[170px] md:mb-[280px]`}
+        className={`${styles.chevronButton} mb-[170px] lg:mb-[280px]`}
         onClick={handleBack}
       >
         <IoChevronBackOutline size={20} className="text-primary" />
       </button>
       <button
-        className={`${styles.chevronButton} mb-[170px] md:mb-[280px]`}
+        className={`${styles.chevronButton} mb-[170px] lg:mb-[280px]`}
         onClick={handleNext}
       >
         <IoChevronForwardOutline size={20} className="text-primary" />

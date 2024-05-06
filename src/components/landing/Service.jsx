@@ -8,7 +8,7 @@ const Service = () => {
   return (
     <section id="service" className={`${styles.sectionContainer}`}>
       <SectionTitle title="WHAT WE OFFER" subtitle="SERVICES" />
-      <div className="logo-container">
+      <div className="logo-container" data-aos="fade-up">
         <img src={whatWeOffer} alt="Car Rental" id="logo-image" />
         <p id="page-logo">
           We provide car rental for daily, monthly, and yearly periods. We also
