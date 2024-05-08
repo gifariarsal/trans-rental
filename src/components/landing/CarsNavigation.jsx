@@ -16,12 +16,16 @@ const CarsNavigation = ({
       <button
         className={`${styles.chevronButton} mb-[170px] lg:mb-[280px]`}
         onClick={handleBack}
+        title="Back"
+        aria-label="Back to previous car"
       >
         <IoChevronBackOutline size={20} className="text-primary" />
       </button>
       <button
         className={`${styles.chevronButton} mb-[170px] lg:mb-[280px]`}
         onClick={handleNext}
+        title="Next"
+        aria-label="Next car"
       >
         <IoChevronForwardOutline size={20} className="text-primary" />
       </button>

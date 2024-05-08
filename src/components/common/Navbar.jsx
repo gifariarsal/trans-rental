@@ -31,14 +31,15 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full h-[80px] bg-transparent relative flex justify-between items-center px-4 md:px-8">
+    <header className="w-full h-[80px] bg-transparent relative flex justify-between items-center px-4 md:px-8" data-aos="fade-down">
       <Logo onClick={() => setIsMenuOpen(false)} />
       <nav className="bg-inherit">
         <div className="hidden md:flex justify-between items-center md:space-x-8">
           {navItems.map((item) => (
             <Link
               key={item}
-              offset={60}
+              offset={40}
+              href={`#${formatLinkIdentifier(item)}`}
               to={formatLinkIdentifier(item)}
               spy={true}
               smooth={true}
@@ -60,6 +61,7 @@ const Navbar = () => {
           <div key={item} className="cursor-pointer">
             <Link
               offset={40}
+              href={`#${formatLinkIdentifier(item)}`}
               to={formatLinkIdentifier(item)}
               spy={true}
               smooth={true}
