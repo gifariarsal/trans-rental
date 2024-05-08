@@ -1,17 +1,17 @@
-import logo from './logo.png';
-import seater31 from './cars/31-seater.png';
-import seater51 from './cars/51-seater.png';
-import alphard from './cars/alphard.png';
-import fortuner from './cars/fortuner.png';
-import hiAce from './cars/hi-ace.png';
-import innovaZenix from './cars/innova-zenix.png';
-import whatWeOffer from './what-we-offer.png';
-import hero from './hero.png';
-import heroSmall from './hero-small.png';
-import about from './about.png';
-import rama from './company-members/rama.png';
-import rendy from './company-members/rendy.png';
-import yunita from './company-members/yunita.png';
+import logo from './logo.webp';
+import seater31 from './cars/31-seater.webp';
+import seater51 from './cars/51-seater.webp';
+import alphard from './cars/alphard.webp';
+import fortuner from './cars/fortuner.webp';
+import hiAce from './cars/hi-ace.webp';
+import innovaZenix from './cars/innova-zenix.webp';
+import whatWeOffer from './what-we-offer.webp';
+import hero from './hero.webp';
+import heroSmall from './hero-small.webp';
+import about from './about.webp';
+import rama from './company-members/rama.webp';
+import rendy from './company-members/rendy.webp';
+import yunita from './company-members/yunita.webp';
 
 export {
   logo,
