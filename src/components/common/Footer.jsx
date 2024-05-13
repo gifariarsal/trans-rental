@@ -10,8 +10,8 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="w-full flex flex-col lg:flex-row bg-transparent p-8 lg:p-12 lg:px-16 gap-8 lg:gap-16">
+    <footer className="border-t border-white/50">
+      <div className="w-full flex flex-col lg:flex-row bg-transparent pt-8 px-4 md:px-10 gap-8 lg:gap-16">
         <div className="w-full lg:w-[30%]">
           <p className="text-white font-bold text-3xl lg:text-4xl mb-4">
             Get in Touch
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full lg:w-[30%] flex flex-col items-center lg:items-start">
-          <p className="text-white font-bold lg:text-xl lg:ml-3 mb-4">
+          <p className="text-white font-bold lg:text-xl lg:ml-3 lg:mb-4">
             Follow Us
           </p>
           <div className="flex gap-4 text-white">
@@ -87,7 +87,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center lg:justify-start bg-transparent text-white font-medium border-t border-white p-4 px-8 lg:px-16">
+      <div className="w-full flex justify-center lg:justify-end bg-transparent text-white pt-4 py-2 px-4 md:px-10">
         <span>
           {new Date().getFullYear()} &copy; Trans Rental | All Rights Reserved
         </span>
