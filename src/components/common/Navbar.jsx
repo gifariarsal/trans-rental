@@ -31,7 +31,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full h-[80px] bg-transparent relative flex justify-between items-center px-4 md:px-8" data-aos="fade-down">
+    <header className="w-full h-[80px] bg-transparent relative flex justify-between items-center px-4 md:px-8">
       <Logo onClick={() => setIsMenuOpen(false)} />
       <nav className="bg-inherit">
         <div className="hidden md:flex justify-between items-center md:space-x-8">
@@ -55,18 +55,17 @@ const Navbar = () => {
         initial={false}
         animate={isMenuOpen ? 'open' : 'closed'}
         variants={menuVariants}
-        className={`absolute w-full bg-black flex flex-col gap-6 p-6 top-[77px] left-0 z-10`}
+        className={`absolute w-[96%] rounded-lg custom-shadow bg-black flex flex-col gap-6 p-6 top-[77px] left-[2%] z-10`}
       >
         {navItems.map((item) => (
           <div key={item} className="cursor-pointer">
             <Link
-              offset={40}
               href={`#${formatLinkIdentifier(item)}`}
               to={formatLinkIdentifier(item)}
               spy={true}
               smooth={true}
               onClick={toggleMenu}
-              className="text-white font-medium"
+              className="bg-inherit text-white font-medium"
             >
               {item}
             </Link>
