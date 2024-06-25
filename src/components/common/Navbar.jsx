@@ -31,7 +31,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full h-[80px] bg-transparent relative flex justify-between items-center px-4 md:px-8">
+    <header className="w-full bg-transparent relative flex justify-between items-center py-4 px-4 md:px-8">
       <Logo onClick={() => setIsMenuOpen(false)} />
       <nav className="bg-inherit">
         <div className="hidden md:flex justify-between items-center md:space-x-8">
@@ -43,7 +43,7 @@ const Navbar = () => {
               to={formatLinkIdentifier(item)}
               spy={true}
               smooth={true}
-              className="text-white font-medium cursor-pointer hover:text-primary transition-all duration-300"
+              className="text-white xl:text-2xl font-medium cursor-pointer hover:text-primary transition-all duration-300"
             >
               {item}
             </Link>

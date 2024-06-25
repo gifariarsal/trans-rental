@@ -7,19 +7,19 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className={`${styles.sectionContainer} md:min-h-[calc(100vh-80px)] !py-10`}
+      className={`${styles.sectionContainer}`}
     >
-      <div className="w-full h-full flex flex-col justify-center items-end gap-12">
+      <div className="flex flex-col justify-center gap-12 xl:gap-24">
         <div className="w-full h-[40%] flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0">
           <div className="w-full lg:w-[50%]" data-aos="fade-down">
-            <h1 className={`text-4xl md:text-5xl lg:text-6xl text-white font-bold`}>
+            <h1 className={`text-4xl md:text-5xl lg:text-6xl xl:text-8xl text-white font-bold`}>
               MAKE <span className="text-primary">YOUR TRIP</span> EASIER
               <span className="text-primary">.</span>
             </h1>
           </div>
           <div className="w-full lg:w-[50%] flex flex-col lg:flex-row justify-center items-center gap-8" data-aos="fade-down">
             <div className="w-full lg:w-[50%]">
-              <p className="text-white">
+              <p className="text-white xl:text-2xl xl:leading-10">
                 Experience luxury and comfort with our luxury car rental
                 services
               </p>
