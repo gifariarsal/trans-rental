@@ -55,17 +55,17 @@ const CarsCarousel = ({
         </motion.div>
       ))}
       <div
-        className="flex flex-col items-center justify-center gap-2 mt-4"
+        className="flex flex-col items-center justify-center gap-2 xl:gap-4 mt-4 z-10"
         style={{ visibility: 'visible' }}
       >
-        <p className="text-white text-2xl lg:text-3xl font-semibold mb-4">
+        <p className="text-white text-2xl lg:text-3xl xl:text-5xl font-semibold mb-4">
           {carsData[selectedIndex].name}
         </p>
         <a
           href={generateWhatsAppLink(carsData[selectedIndex].name)}
           target="_blank"
           rel="noreferrer"
-          className="pulse btn-bg text-white font-semibold px-12 py-3 rounded-[6px] hover:scale-105 transition-all duration-300 cursor-pointer"
+          className="pulse btn-bg text-white font-semibold xl:text-xl px-12 py-3 rounded-[6px] hover:scale-105 transition-all duration-300 cursor-pointer"
         >
           Book Now
         </a>

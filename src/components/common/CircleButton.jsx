@@ -1,24 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { IoCall } from 'react-icons/io5';
+import useIconSize from '../../hooks/useIconSize';
 
 const CircleButton = () => {
-  const [iconSize, setIconSize] = useState(20);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 1280) {
-        setIconSize(30);
-      } else {
-        setIconSize(20);
-      }
-    };
-
-    handleResize();
-
-    window.addEventListener('resize', handleResize);
-
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  const iconSize = useIconSize();
 
   return (
     <a

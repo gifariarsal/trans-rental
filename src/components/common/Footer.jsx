@@ -7,16 +7,18 @@ import {
   IoLocationOutline,
 } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
+import useIconSize from '../../hooks/useIconSize';
 
 const Footer = () => {
+  const iconSize = useIconSize();
   return (
     <footer className="border-t border-white/50">
       <div className="w-full flex flex-col lg:flex-row bg-transparent pt-8 px-4 md:px-10 gap-8 lg:gap-16">
         <div className="w-full lg:w-[30%]">
-          <p className="text-white font-bold text-3xl lg:text-4xl mb-4">
+          <p className="text-white font-bold text-3xl lg:text-4xl xl:text-5xl mb-4">
             Get in Touch
           </p>
-          <p className="text-white text-sm">
+          <p className="text-white xl:text-lg text-sm">
             Feel free to get in touch with us to discuss your car rental needs.
             We are here to provide you with the right solutions and help you
             find the ideal vehicle for any occasion.
@@ -24,7 +26,7 @@ const Footer = () => {
         </div>
         <div className="w-full lg:w-[40%] text-white flex flex-col gap-4">
           <div className="flex gap-4 items-center mb-4">
-            <IoMailOutline size={24} />
+            <IoMailOutline size={iconSize} />
             <a
               href="mailto:admin@rent1st.com"
               className="text-white font-medium lg:text-lg"
@@ -33,7 +35,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex gap-4 items-start mb-4">
-            <IoLogoWhatsapp size={24} />
+            <IoLogoWhatsapp size={iconSize} />
             <a
               href="https://wa.me/+6282168683898"
               className="text-white font-medium lg:text-lg"
@@ -44,12 +46,12 @@ const Footer = () => {
             </a>
           </div>
           <div className="w-full flex gap-4 items-start mb-4">
-            <div className="lg:w-[7%]">
-              <IoLocationOutline size={24} />
+            <div className="lg:w-[7%] xl:w-fit">
+              <IoLocationOutline size={iconSize} />
             </div>
             <a
               href="https://maps.app.goo.gl/cP3qdkUFJwwvJXxk7"
-              className="lg:w-[93%] text-white font-medium lg:text-lg"
+              className="lg:w-[93%] xl:w-full text-white font-medium lg:text-lg"
               target="_blank"
               rel="noreferrer"
             >
@@ -59,7 +61,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full lg:w-[30%] flex flex-col items-center lg:items-start">
-          <p className="text-white font-bold lg:text-xl lg:ml-3 lg:mb-4">
+          <p className="text-white font-bold lg:text-xl xl:text-2xl lg:ml-3 lg:mb-4">
             Follow Us
           </p>
           <div className="flex gap-4 text-white">
@@ -72,7 +74,7 @@ const Footer = () => {
                 title="Instagram"
                 aria-label="Instagram"
               >
-                <IoLogoInstagram size={20} />
+                <IoLogoInstagram size={iconSize} />
               </button>
             </Link>
             <Link to="https://www.tiktok.com/@transrentalco" target="_blank">
@@ -81,13 +83,13 @@ const Footer = () => {
                 title="Tiktok"
                 aria-label="Tiktok"
               >
-                <IoLogoTiktok size={20} />
+                <IoLogoTiktok size={iconSize} />
               </button>
             </Link>
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center lg:justify-end bg-transparent text-white pt-4 py-2 px-4 md:px-10">
+      <div className="w-full flex justify-center lg:justify-end bg-transparent text-white xl:text-lg pt-4 py-2 px-4 md:px-10 xl:py-4">
         <span>
           {new Date().getFullYear()} &copy; Trans Rental | All Rights Reserved
         </span>

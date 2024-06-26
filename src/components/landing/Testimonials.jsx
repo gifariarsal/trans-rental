@@ -8,7 +8,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className={`${styles.sectionContainer}`}>
       <SectionTitle title="WHAT OUR CUSTOMERS SAY" subtitle="TESTIMONIALS" />
-      <div className="flex items-center w-full max-w-screen-xl mx-auto text-center">
+      <div className="flex items-center w-full mx-auto text-center">
         <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8" data-aos="fade-up" data-aos-delay="300">
           {testimonials.map(({ quote, name }) => (
             <div
@@ -18,9 +18,9 @@ const Testimonials = () => {
               <span className="text-primary mx-auto">
                 <RiDoubleQuotesL size={35} />
               </span>
-              <p className="text-white my-2">{quote}</p>
-              <hr className="w-[50%] mx-auto border-white/30" />
-              <p className="text-primary mt-2">{name}</p>
+              <p className="text-white xl:text-xl xl:leading-8 my-2">{quote}</p>
+              <hr className="w-[50%] xl:w-[80%] mx-auto border-white/30" />
+              <p className="text-primary xl:text-xl mt-2">{name}</p>
             </div>
           ))}
         </div>

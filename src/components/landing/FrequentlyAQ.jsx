@@ -12,11 +12,11 @@ const FrequentlyAQ = () => {
         <Accordion collapseAll className="custom-shadow border-black">
           {faqData.map(({ id, question, answer }) => (
             <Accordion.Panel key={id}>
-              <Accordion.Title className="text-primary bg-black hover:bg-blackShade transition duration-300">
+              <Accordion.Title className="text-primary xl:text-xl bg-black hover:bg-blackShade transition duration-300">
                 {question}
               </Accordion.Title>
               <Accordion.Content>
-                <p className="text-white">{answer}</p>
+                <p className="text-white xl:text-lg">{answer}</p>
               </Accordion.Content>
             </Accordion.Panel>
           ))}

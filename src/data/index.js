@@ -91,7 +91,7 @@ export const companyMembers = [
 ];
 
 export const missionList = [
-  'Intriducing Riau Islands tourist destination to the public',
+  'Introducing Riau Islands tourist destination to the public',
   'Recruiting young people who care about tourism in Riau Islands',
   'Providing transportation solutions by providing a wide selection of services & vehicles',
 ];

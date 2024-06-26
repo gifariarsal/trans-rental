@@ -3,10 +3,10 @@ import { styles } from '../../styles';
 import SectionTitle from '../common/SectionTitle';
 import { Modal } from 'flowbite-react';
 import { companyMembers, missionList } from '../../data';
-import AboutLanding from './AboutLanding';
 import CompanyMembers from '../about/CompanyMembers';
 import Vision from '../about/Vision';
 import Mission from '../about/Mission';
+import AboutLanding from '../about/AboutLanding';
 
 const About = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -22,7 +22,7 @@ const About = () => {
         onClose={() => setOpenModal(false)}
       >
         <Modal.Header className="custom-shadow bg-black">
-          <p className="text-primary font-semibold text-xl lg:text-2xl">
+          <p className="text-primary font-semibold text-xl lg:text-2xl xl:text-3xl">
             About Us
           </p>
         </Modal.Header>

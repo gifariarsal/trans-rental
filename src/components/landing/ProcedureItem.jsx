@@ -8,7 +8,7 @@ const ProcedureItem = ({ icon, text, className = '' }) => {
       >
         {icon}
       </div>
-      <p className="text-center text-white md:text-lg lg:text-2xl">{text}</p>
+      <p className="text-center text-white md:text-lg xl:text-2xl">{text}</p>
     </div>
   );
 };
