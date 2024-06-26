@@ -43,7 +43,7 @@ const Procedure = () => {
     },
   ];
   return (
-    <section id="procedure" className={`${styles.sectionContainer}`}>
+    <section id="procedure" className={`${styles.sectionContainer} xl:py-36`}>
       <SectionTitle title="HOW IT WORKS" subtitle="PROCEDURE" />
       <div
         className="w-full flex flex-col lg:flex-row justify-center items-center gap-4 md:gap-8"

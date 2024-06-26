@@ -7,7 +7,7 @@ import SectionTitle from '../common/SectionTitle';
 const Service = () => {
   return (
     <section id="service" className={`${styles.sectionContainer}`}>
-      <SectionTitle title="WHAT WE OFFER" subtitle="SERVICES" />
+      <SectionTitle title="WHAT WE OFFER" subtitle="SERVICE" />
       <div className="logo-container" data-aos="fade-up">
         <img src={whatWeOffer} alt="Car Rental" id="logo-image" />
         <p id="page-logo">
