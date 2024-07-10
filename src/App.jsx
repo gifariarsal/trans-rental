@@ -1,7 +1,14 @@
-import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Footer, Navbar } from './components';
-import { LandingPage } from './pages';
+import {
+  About,
+  Cars,
+  FrequentlyAQ,
+  Hero,
+  Procedure,
+  Service,
+  Testimonials,
+} from './components';
 import useAOS from './hooks/useAos';
 
 function App() {
@@ -11,9 +18,13 @@ function App() {
       <>
         <Navbar />
         <main>
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-          </Routes>
+          <Hero />
+          <Service />
+          <Procedure />
+          <Cars />
+          <About />
+          <Testimonials />
+          <FrequentlyAQ />
         </main>
         <Footer />
       </>
